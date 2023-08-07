@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Make A Booking | Hikoi Kuri</title>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="booking-header">
+            <h1>MAKE A BOOKING</h1>
+        </div>
+
+        <div class="book-appt cyd">
+            <h1>Choose Your Dog</h1>
+            <div class="dog-wrapper" id="dog-wrapper">
+                <div class="dog-card-wrapper">
+                    <div class="card dog1" data-status="inactive" called = "false"></div>
+                </div>
+                <div class="dog-card-wrapper">
+                    <div class="card dog2" data-status="active" called = "true"></div>
+                </div>
+                <div class="dog-card-wrapper">
+                    <div class="card dog3" data-status="inactive" called = "false"></div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="previous" onclick="changeFocusBack()"><</button>
+                <button id="select" onclick="nextStep()">Select</button>
+                <button id="next" onclick="changeFocus()">></button>
+            </div>
+        </div>
+        <div class="book-appt cyt" id="cyt">
+            <div class="time-selector">
+                <h1>Choose your time</h1>
+                <div class="time-container">
+                    <ul class="time-drop-down">
+                        <li class="time-schedulable" data-index="6" data-called="false">
+                            <button class="time-choice" onclick="changeTime(0)" id="time-selector-buton">6 AM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="7" data-called="false">
+                            <button class="time-choice" onclick="changeTime(1)">7 AM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="8" data-called="false">
+                            <button class="time-choice" onclick="changeTime(8)">8 AM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="9" data-called="false">
+                            <button class="time-choice" onclick="changeTime(9)">9 AM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="10" data-called="false">
+                            <button class="time-choice" onclick="changeTime(10)">10 AM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="11" data-called="false">
+                            <button class="time-choice" onclick="changeTime(11)">11 AM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="12" data-called="false">
+                            <button class="time-choice" onclick="changeTime(0)">12 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="13" data-called="false">
+                            <button class="time-choice" onclick="changeTime(1)">1 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="14" data-called="false">
+                            <button class="time-choice" onclick="changeTime(2)">2 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="15" data-called="false">
+                            <button class="time-choice" onclick="changeTime(3)">3 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="16" data-called="false">
+                            <button class="time-choice" onclick="changeTime(4)">4 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="17" data-called="false">
+                            <button class="time-choice" onclick="changeTime(5)">5 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="18" data-called="false">
+                            <button class="time-choice" onclick="changeTime(6)">6 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="19" data-called="false">
+                            <button class="time-choice" onclick="changeTime(7)">7 PM</button>
+                        </li>
+                        <li class="time-schedulable" data-index="20" data-called="false">
+                            <button class="time-choice" onclick="changeTime(8)">8 PM</button>
+                        </li>
+                    </ul>
+                    <button class="change-opacity-summon" onclick="changeOpacityAll()">V</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <hr>
+            <footer>
+                <div class="home section-footer">
+                    <p>Quick Actions</p>
+                    <a href="index.html">Home</a>
+                    <a href="booking.html">Book a walk</a>
+                    <a href="recurring-walk.html">Create a schedule</a>
+                    <a href="meet-the-team.html">Meet our team</a>
+                    <a href="about-us.html">About us</a>
+                </div> 
+                <hr>
+                <div class="profile section-footer">
+                    <p>My Profile</p>
+                    <a href="profile.html">My Dogs</a>
+                    <a href="walkers.html">Favourite Walkers</a>
+                    <a href="walks.html">Scheduled Walks</a>
+                    <a href="previous-walks.html">History</a>
+                </div>
+                <hr>
+                <div class="help section-footer">
+                    <p>Help</p>
+                    <a href="sign-up.html">Sign up</a>
+                    <a href="login.html">Login</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="review-walker.html">Leave a review</a>
+                </div>
+            </footer>
+        </div> 
+    </div>
+</body>
+<script src="scripts/script.js"></script>
+</html>

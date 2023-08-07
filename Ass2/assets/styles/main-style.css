@@ -1,0 +1,456 @@
+* {
+    --title-font-main: 'Poppins', sans-serrifs;
+
+    --title-size: 21pt;
+    --sub-title-size: 12pt;
+    --super-size: 9pt;
+    --header-size: 18pt;
+    --option-size: 7pt;
+
+    --header-weight: 700;
+    --title-weight: 600;
+    --sub-title-weight: 500;
+
+    --default-margin: 20px 0 0 20px;
+
+    --line-height-normal: 1;
+
+    --black-color: #101111;
+    --dark-gray-color: #414144;
+    --super-color: #d2797b;
+    --location-card-background: #e9e7eb;
+    --default-background-color: #f6fcfc;
+    --card-dark: #2e3131;
+    --dog-counter-dark: #252626;
+    --dog-counter-light: #edf1f1;
+    --card-default: #edf1f1;
+    --text-light: #edf1f1;
+    --text-medium: #989899;
+    --brand-aqua: #5ce0de;
+    --brand-lavender: #d3bee9;
+    --brand-seafoam: #90eaa5;
+    --accent-blue: #3f7ce1;
+    --map-default-background: #4d4e4e;
+    --default-card-stroke: #404044;
+    --map-card-gray: #343737;
+    --map-icon-blue: #42aeec;
+
+    font-family: var(--title-font-main);
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* For Main Page */
+.main-wrapper {
+    width: 412px;
+    height: 914px;
+    border: 2px solid;
+    overflow: scroll;
+}
+.main-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.header-wrapper {
+    background-image: url(/assets/media/splash-images/main-splash-temp.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1/1.2;
+
+}
+
+/* Global Footer Style */
+.footer-wrapper {
+    padding-top: 40px;
+}
+.footer-wrapper > hr {
+    padding-bottom: 10px;
+}
+.footer-section {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 15%;
+}
+.b2t-wrapper {
+    margin-left: 0;
+    padding: 10px 0 0 0;
+}
+.b2t-wrapper > a {
+    padding: 10px 0 0 5px;
+}
+.b2t-wrapper > a > svg{
+    content: '';
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(25%);
+}
+
+/* Booking Styling */
+/* Next and cancel function buttons */
+.function-buttons {
+    margin-top: 50px;
+}
+.function-buttons > * {
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: calc(var(--header-size)/1.5);
+    font-weight: calc(var(--sub-title-weight)*0.9);
+    color: var(--default-background-color);
+}
+.function-buttons > a {
+    background-color: var(--accent-blue);
+}
+.function-buttons > button {
+    padding-inline: 50px;
+    background-color: var(--card-dark);
+    cursor: pointer;
+    margin-left: 20px;
+}
+/* Header */
+.booking-main {
+    background-color: var(--default-background-color);
+    user-select: none;
+    color: var(--black-color);
+}
+.booking-header-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin: var(--default-margin);
+}
+
+.header-title {
+    line-height: var(--line-height-normal);
+}
+
+.header-title > h1 {
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    color: var(--title-color);
+}
+.header-title > a {
+    font-size: var(--sub-title-size);
+    color: var(--dark-gray-color);
+}
+.header-title > a > sup {
+    font-size: var(--super-size);
+    color: var(--super-color);
+}
+/* Header Location Selector */
+.location-selector {
+    display: flex;
+    line-height: var(--line-height-normal);
+}
+.location-container > p {
+    font-size: var(--sub-title-size);
+    background-color: var(--location-card-background);
+    font-weight: var(--sub-title-weight);
+    border-radius: 10px;
+    padding: 5px 0px 5px 10px;
+}
+.location-container > button {
+    font-size: var(--option-size);
+    color: var(--dark-gray-color);
+    background: none;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/* Booking Steps */
+.booking-sequence {
+    margin: var(--default-margin);
+    margin-top: 50px;
+}
+/* Dog Selection */
+.dog-step-header {
+    display: flex;
+}
+.dog-step-header > h1{
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+}
+.dog-step-header > a {
+    font-size: var(--super-size);
+    color: var(--text-medium);
+    padding: 5px 0px 0px 5px;
+}
+/* Dog Tags */
+* > .tags {
+    display: flex;
+    gap: 0.3rem;
+    margin-block: 5px;
+}
+* > .tags > * > button, .tags > button {   
+    padding: 0px 5px 0px 5px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: var(--sub-title-weight);
+    font-size: var(--super-size);
+    cursor: pointer;
+}
+* > .tags > * > #delete-tag {
+    visibility: hidden;
+    width: 30px;
+}
+.walk-multiple > button {
+    background-color: var(--brand-lavender);
+    border-radius: 10px 0 0 10px;
+}
+.walk-multiple > #delete-tag {
+    visibility: visible;
+    border-radius: 0 10px 10px 0;
+}
+.add-dog > button {
+    background-color: var(--brand-aqua);
+}
+/* Dog Selection */
+.dog-selection-menu {
+    margin-top: 20px;
+}
+/* Select up to 5 dogs */
+.selection-multiple {
+    display: flex;
+    gap: 0.3rem;
+    font-size: var(--super-size);
+    flood-color: var(--text-medium);
+    margin-left: 200px;
+}
+.dog-counter > p {
+    background-color: var(--dog-counter-dark);
+    color: var(--dog-counter-light);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+/* Dog Selection Cards */
+.card {
+    border: 1px solid var(--default-card-stroke);
+    margin-top: 10px;
+    padding: 2px 0px 5px 5px;
+    width: 350px;
+    aspect-ratio: 1/0.3;
+    border-radius: 10px;
+    background-color: var(--card-color);
+}
+.card[data-selected] {
+    background-color: var(--card-dark);
+}
+.card[data-selected] > .dog-information {
+    color: var(--card-default);
+}
+.card[data-selected] > .dog-information > button {
+    color: var(--super-color);
+}
+.card[data-selected] > .actions > #delete, .card[data-selected] > .actions > #edit {
+    visibility: hidden;
+}
+.dog-information {
+    display: flex;
+}
+.dog-information > #name {
+    width: 200px;
+    font-size: var(--header-size);
+    font-weight: var(--title-weight);
+    margin-top: 10px;
+    padding-left: 5px;
+}
+.dog-information > p > sup {
+    font-size: var(--super-size);
+    font-weight: var(--sub-title-weight);
+}
+.dog-information > button {
+    background-color: transparent;
+    border: none;
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+    margin-left: 120px;
+    cursor: pointer;
+}
+.actions {
+    display: flex;
+    margin-top: 40px;
+}
+.actions > p {
+    width: 100px;
+    margin-right: 120px;
+    font-size: calc(var(--header-size)/1.2);
+    color: var(--text-medium);
+    font-weight: var(--title-weight);
+    padding-left: 5px;
+    margin-top: -40px;
+
+}
+.actions > button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: var(--sub-title-weight);
+    cursor: pointer;
+}
+.actions > #delete {
+    color: var(--super-color);
+}
+.actions > #edit {
+    color: var(--brand-blue);
+}
+/* Choose Time Step */
+.time-step {
+    margin-top: 310px;
+}
+.time-step-header > h1 {
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+}
+/* Time Tags */
+#time-option-1 {
+    background-color: var(--brand-aqua);
+}
+#time-option-2 {
+    background-color: var(--brand-seafoam);
+}
+#schedule-create {
+    background-color: var(--brand-lavender);
+}
+/* Time Card */
+.time-card {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    height: 80px;
+}
+.time-card > * > p {
+    font-size: var(--header-size);
+    font-weight: var(--title-weight);
+}
+.time-card > * > p > sup {
+    font-size: var(--super-size);
+    font-weight: var(--sub-title-weight);
+    margin-right: 5px;
+}
+.time-card > .time {
+    margin-left: 20px;
+}
+.time-card > .date {
+    margin-left: 10px;
+}
+.time-card > .actions > button {
+    font-size: var(--header-size);
+    margin-left: 20px;
+    margin-top: -90px;
+}
+.actions-time > button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--text-medium);
+    font-weight: var(--title-weight);
+}
+.actions-time > #pin-time {
+    margin-left: 10px;
+}
+/* Walker Step */
+.walker-information {
+    display: flex;
+    gap: 14rem;
+}
+.review-actions {
+    display: flex;
+}
+.walker-information > #name {
+    width: 100px;
+}
+
+/* Review and Checkout */
+/* Map */
+.isMap {
+    padding: 0;
+    background-color: var(--map-default-background);
+}
+.isInfo {
+    padding: 0;
+    margin: 180px 0 0 0;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--map-card-gray);
+    width: 348px;
+}
+.isInfo > * {
+    display: flex;
+    margin: 5px 0 0 10px;
+}
+.main-selector > p, .main-selector > button {
+    font-size: var(--super-size);
+    font-weight: var(--title-weight);
+}
+.main-selector > p {
+    color: var(--text-medium);
+}
+.main-selector > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: var(--accent-blue);
+}
+.primary-location {
+    gap: 0.1rem;
+    margin-top: 20px;
+}
+.primary-location > p, .primary-location > button {
+    font-size: var(--super-size);
+    font-weight: var(--title-weight);
+    padding: 2px 5px;
+}
+.primary-location > p {
+    background-color: var(--card-dark);
+    border-radius: 10px 0 0 10px;
+    color: var(--text-medium);
+}
+.primary-location > button {
+    background-color: var(--black-color);
+    color: var(--card-default);
+    border-radius: 0 10px 10px 0;
+}
+.main-actions > *{
+    font-size: var(--super-size);
+    margin-top: 10px;
+}
+.main-actions > button {
+    color: var(--super-color);
+    background-color: transparent;
+    border: none;
+    font-weight: var(--header-weight);
+    cursor: pointer;
+    margin-left: 2px;
+}
+.location-detect-wrapper {
+    margin-left: 170px;
+    display: flex;
+}
+.location-detect-wrapper > * {
+    font-weight: var(--title-weight);
+}
+.location-detect-wrapper > p {
+    padding: 0;
+    margin-top: 1px;
+    color: var(--text-medium);
+}
+.location-detect-wrapper > button {
+    border: none;
+    background-color: transparent;
+    color: var(--accent-blue);
+    cursor: pointer;
+    margin-left: 3px;
+    padding: 0;
+    font-size: var(--super-size);
+}

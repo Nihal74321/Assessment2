@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/main-style.css">
+    <link rel="stylesheet" href="styles/style.css"> <!--Styling fallback-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Book An Appointment | Hikoi Kuri</title>
+</head>
+<body>
+    <div class="main-wrapper booking-main">
+        <div class="booking-header-wrapper">
+            <div class="header-title">
+                <h1>Book A Walk</h1>
+                <a href="">or try a group walk<sup>new</sup></a>
+            </div>
+            <div class="location-selector">
+                <div class="location-container">
+                    <p>4 Thirteenth Av...</p>
+                    <button id="location-change">change your location > </button>
+                </div>
+            </div>
+        </div>
+        <div class="booking-sequence dog-step">
+            <div class="dog-step-header">
+                <h1>Choose Your Dog</h1>
+                <a href="profile.html">manage your dogs ></a>
+            </div>
+            <div class="tags">
+                <div class="walk-multiple">
+                    <button>Walk Multiple Dogs</button>
+                    <button id="delete-tag">X</button>
+                </div>
+                <div class="add-dog">
+                    <button>Add Another Dog</button>
+                    <button id="delete-tag">X</button>
+                </div>
+            </div>
+            <div class="dog-selection-menu">
+                    <div class="selection-multiple">
+                        <p>Select up to 5 dogs</p>
+                        <div class="dog-counter">
+                            <p>1/5</p>
+                        </div>
+                    </div>
+                    <div class="card" data-selected>
+                        <div class="dog-information">
+                            <p id="name">
+                                Einstein
+                                <sup id="age">12 Yr</sup>
+                            </p>
+                            <button id="cancel-selection">
+                                X
+                            </button>
+                        </div>
+                        <div class="actions">
+                            <p id="breed">Beagle</p>
+                            <button id="delete">
+                                Delete >
+                            </button>
+                            <button id="edit">
+                                Edit >
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="dog-information">
+                            <p id="name">
+                                Leroy
+                                <sup id="age">6 Yr</sup>
+                            </p>
+                            <button id="cancel-selection">
+                                >
+                            </button>
+                        </div>
+                        <div class="actions">
+                            <p id="breed">Schnauzer</p>
+                            <button id="delete">
+                                Delete >
+                            </button>
+                            <button id="edit">
+                                Edit >
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="dog-information">
+                            <p id="name">
+                                Harley
+                                <sup id="age">6 Yr</sup>
+                            </p>
+                            <button id="cancel-selection">
+                                >
+                            </button>
+                        </div>
+                        <div class="actions">
+                            <p id="breed">Schnauzer</p>
+                            <button id="delete">
+                                Delete >
+                            </button>
+                            <button id="edit">
+                                Edit >
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            <div class="function-buttons">
+                <a href="#Time">Next Step</a>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="booking-sequence time-step" id="Time">
+            <div class="time-step-header">
+                <h1>Choose your time</h1>
+            </div>
+            <div class="tags">
+                <button id="time-option-1">12 PM</button>
+                <button id="time-option-2">4 PM</button>
+                <button id="schedule-create">Create A Schedule</button>
+            </div>
+            <div class="card time-card">
+                <div class="time">
+                    <p><sup>at</sup>12 PM</p>
+                </div>
+                <div class="date">
+                    <p><sup>on</sup>Tuesday, 27th</p>
+                </div>
+                    <div class="actions">
+                        <button>></button>
+                    </div>
+            </div>
+            <div class="actions-time">
+                <button id="make-recurring">Make it a recurring trip ></button>
+                <button id="pin-time">Pin this time ></button>
+            </div>
+            <div class="function-buttons">
+                <a href="#Walker">Next Step</a>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="booking-sequence walker-step" id="Walker">
+            <div class="walker-step-header">
+                <h1>Choose Your Walker</h1>
+                <a href="history.html">view your walker history ></a>
+            </div>
+            <div class="tags">
+                <div class="popular-walkers">
+                    <button>Popular</button>
+                    <button id="delete-tag">X</button>
+                </div>
+                <div class="near-walkers">
+                    <button>Near You<sup>new</sup></button>
+                    <button id="delete-tag">X</button>
+                </div>
+                <div class="best-walkers">
+                    <button>Best Reviewed</button>
+                    <button id="delete-tag">X</button>
+                </div>
+            </div>
+            <div class="walker-selection-menu">
+                    <div class="card">
+                        <div class="walker-information">
+                            <p id="name">
+                                Michael
+                            </p>
+                            <button id="cancel-selection">
+                                >
+                            </button>
+                        </div>
+                        <div class="review-actions">
+                            <p>
+                                4.5 Stars
+                                <sup>187 reviews</sup>
+                            </p>
+                            <button>Hide ></button>
+                            <button>Share ></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="walker-information">
+                            <p id="name">
+                                Michael
+                            </p>
+                            <button id="cancel-selection">
+                                >
+                            </button>
+                        </div>
+                        <div class="review-actions">
+                            <p>
+                                4.5 Stars
+                                <sup>187 reviews</sup>
+                            </p>
+                            <button>Hide ></button>
+                            <button>Share ></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="walker-information">
+                            <p id="name">
+                                Michael
+                            </p>
+                            <button id="cancel-selection">
+                                >
+                            </button>
+                        </div>
+                        <div class="review-actions">
+                            <p>
+                                4.5 Stars
+                                <sup>187 reviews</sup>
+                            </p>
+                            <button>Hide ></button>
+                            <button>Share ></button>
+                        </div>
+                    </div>
+            </div>
+            <div class="function-buttons">
+                <a href="#Payment">Next Step</a>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="booking-sequence payment-step" id="Payment">
+            <div class="payment-header-wrapper">
+                <h1>Add Your Payment Details</h1>
+                <div class="tags alert">
+                    <button id="alert-icon">!</button>
+                    <button id="alert-text">You won't be charged until after the walk</button>
+                </div>
+                <div class="payment-card-wrapper">
+                    <div class="card-individual-wrapper">
+                        <p>Card number ></p>
+                        <div class="card card-number">
+                            <p>visa mastercard gem</p>
+                        </div>
+                    </div>
+                    <div class="stacked-container">
+                    <div class="card-individual-wrapper">
+                        <p>Expiry Date ></p>
+                        <div class="card expire-date">
+
+                        </div>
+                    </div>
+                    <div class="card-individual-wrapper">
+                        <p>CVV ></p>
+                        <div class="card cvv-number">
+
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-individual-wrapper">
+                        <p>Cardholder Name (optional) ></p>
+                        <div class="card card-name">
+                            <p>why do we ask for this?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="function-buttons">
+                    <a href="#Checkout">Next Step</a>
+                    <button id="cancel">Cancel</button>
+                </div>
+                <div class="paywave-alert">
+                    <p>You can skip this step if you're using paywave</p>
+                    <a href="">Learn more ></a>
+                </div>
+            </div>
+        </div>
+        <div class="booking-sequence checkout-step" id="Checkout">
+            <div class="review-header-wrapper">
+                <h1>Review And Checkout</h1>
+                <div class="tags alert">
+                    <button id="alert-icon">!</button>
+                    <button id="alert-text">
+                        If your walker is unavaible you can reschedule for free
+                    </button>
+                </div>
+                    <button>Please turn on notifications ></button>
+            </div>
+            <div class="review-card-wrapper-large">
+                <div class="review-card-wrapper-individual">
+                    <p>You're booked for</p>
+                    <div class="card">
+                        <p>Walker</p>
+                        <button>Change ></button>
+                    </div>
+                </div>
+                <div class="review-card-wrapper-individual">
+                    <p>With</p>
+                    <div class="card">
+                        <p>Dog</p>
+                        <button>Change ></button>
+                    </div>
+                </div>
+                <div class="review-card-wrapper-individual">
+                    <p>On</p>
+                    <div class="card">
+                        <p>Time</p>
+                        <button>Change ></button>
+                    </div>
+                </div>
+                <div class="review-card-wrapper-individual">
+                    <p>Using</p>
+                    <div class="card">
+                        <p>Payment method</p>
+                        <button>Change ></button>
+                    </div>
+                </div>
+                <div class="review-card-wrapper-individual">
+                    <p>At</p>
+                    <div class="card isMap">
+                        <div class="map">
+
+                        </div>
+                        <div class="card isInfo">
+                            <div class="main-selector">
+                                <p>Your Home</p>
+                                <button>Change ></button>
+                            </div>
+                            <div class="primary-location">
+                                <p>4 Thirteenth Ave...</p>
+                                <button>Default Location</button>
+                            </div>
+                            <div class="main-actions">
+                                <button>Delete ></button>
+                                <div class="location-detect-wrapper">
+                                    <p>Location</p>
+                                    <button>Detect ></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="function-buttons">
+                    <a href="home.html">Checkout</a>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    <div class="footer-wrapper">
+        <hr>
+        <footer>
+            <div class="home footer-section">
+                <p>Quick Actions</p>
+                <a href="home.html">Home</a>
+                <a href="booking.html">Book a walk</a>
+                <a href="">Create a schedule</a>
+                <a href="">Meet our team</a>
+                <a href="">About us</a>
+            </div> 
+            <hr>
+            <div class="profile footer-section">
+                <p>My Profile</p>
+                <a href="">My Dogs</a>
+                <a href="">Favourite Walkers</a>
+                <a href="">Scheduled Walks</a>
+                <a href="">History</a>
+            </div>
+            <hr>
+            <div class="help footer-section">
+                <p>Help</p>
+                <a href="">Sign up</a>
+                <a href="">Login</a>
+                <a href="">Contact Us</a>
+                <a href="">Leave a review</a>
+            </div>
+            <div class="b2t-wrapper footer-section">
+                <hr>
+                <a href="#top">
+                <svg 
+                    version="1.0" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px" 
+                    height="20px" 
+                    viewBox="0 0 50.000000 50.000000"
+                    preserveAspectRatio="xMidYMid meet">
+                    <g 
+                    transform="translate(0.000000,50.000000) 
+                    scale(0.100000,-0.100000)"
+                    fill="#000" 
+                    stroke="none">
+                    <path 
+                    d="M171 353 c-71 -77 -82 -98 -59 -121 19 -19 42 -14 69 14 l24 26 5
+                    -93 c4 -73 9 -94 23 -103 12 -8 22 -8 35 0 14 9 18 29 20 109 l3 98 33 -32
+                    c38 -37 70 -36 82 1 5 16 -10 36 -72 99 -43 44 -82 79 -85 79 -4 0 -39 -35
+                    -78 -77z"/>
+                    </g>
+                </svg>
+                Back to top</a>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+<script src="scripts/script.js"></script>
+</html>

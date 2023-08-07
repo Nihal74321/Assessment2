@@ -1,0 +1,257 @@
+* {
+    --bg-color: #fff;
+    --card-color: #ececec;
+    --title-color: #000;
+    --text-color: #484848;
+    --brand-blue: #48a2c5;
+    --card-darker: #adadad;
+    --button-color: rgb(126, 126, 126);
+    --green-color: #91a437;
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+/*.main-wrapper {
+    width: 412px;
+    height: 914px;
+    overflow: scroll;
+    border: 1px solid;
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+}
+.main-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.header-wrapper {
+    /*background-image: url('/images/2829.jpg');
+    background-color: var(--bg-color);
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    aspect-ratio: 1/1.7;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    justify-content: center;
+    line-height: 1.3
+}
+.header-wrapper > h1,h3 {
+    width: 50%;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+.header-wrapper > h1 {
+    font-weight: 800;
+    font-size: 30pt;
+}
+.cta-section {
+    background-color: var(--bg-color);     
+    width: 412px;
+    height: 70%;
+}
+.card {
+    z-index: 1;
+    width: 75%;
+    aspect-ratio: 1/1.2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--card-color);
+    color: var(--title-color);
+}
+.card > span {
+    font-size: 15pt;
+    font-weight: 800;
+    padding: 10px 10px 0px 10px;
+}
+.card > p {
+    font-size: 13pt;
+    padding: 10px 10px 0px 10px;
+    color: var(--text-color);
+}
+.card > a, button > a, p > a {
+    text-decoration: none;
+    color: var(--brand-blue);
+    font-size: 12pt;
+    margin-top: 10px;
+    padding: 0px 10px 0px 10px;
+}
+.card > img {
+    width: 200px;
+    margin: 30px 50px 0px 50px;
+}
+.get-started > img {
+    width: 130px;
+    margin: 30px 70px 0px 70px;
+}
+.card > button {
+    padding: 10px 0px 10px 0px;
+    height: 50px;   
+    margin: 20px 10px 20px 10px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 40px;
+}
+.card > button > a {
+    color: var(--text-color); 
+}
+.card > p > a {
+    padding: 0px;
+    color: var(--text-color);
+    text-decoration: underline;
+    margin-left: 0px;
+}
+.get-started > p:nth-child(4), p > a{
+    padding: 0px 20px 0px 10px;
+    margin-left: 5px;
+    font-size: 9pt;
+}
+.card > a {
+    font-size: 10pt;
+}
+.footer-wrapper {
+    margin-top: 75vh;
+    color: var(--text-color);
+    height: 200px;
+}
+.footer-wrapper > hr {
+    background-color: pink;
+}
+.footer-wrapper > footer {
+    padding: 20px 60px 0px 60px;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.footer-section > p {
+    color: var(--title-color);
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 10px 0px 5px 0px;
+}
+.booking-header > h1 {
+    font-size: 40pt;
+    line-height: 1.3;
+    padding: 10px;
+}
+.cyd {
+    margin-top:30px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-darker);
+    height: 50%;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.book-appt > h1 {
+    font-weight: 500;
+}
+.dog-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
+    max-width:20rem;
+    transition: 0.8s margin;
+}
+.dog-card-wrapper > .card {
+    width: 10rem;
+    min-width: 10em;
+    height: 12em;
+    padding: 0.5em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dog-card-wrapper > .card::after {
+    content: "dog_name";
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/pet.png');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dog-card-wrapper > .dog1::after {
+    content: "Bob";
+}
+.dog-card-wrapper > .dog2::after {
+    content: "Jim";
+}
+.dog-card-wrapper > .dog3::after {
+    content: "Arthur";
+}
+.dog-card-wrapper > .card[data-status = "active"] {
+    height: 225px;
+}
+.dog-card-wrapper > .card[data-status = "inactive"] {
+    margin-top: 35px;
+    filter: brightness(90%);
+    opacity: 50%;
+}
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 1rem;
+}
+.button-container > button {
+    user-select: none;
+    padding: 10px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    font-weight: 800;
+    font-size: 12pt;
+    background-color: var(--button-color);
+    color: var(--card-color);
+
+}
+.button-container > button:nth-child(2) {
+    height: 50px;
+    font-weight: 500;
+    font-size: 15pt;
+    padding: 0;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+}
+.cyt {
+    margin-top: 250px;
+    opacity: 50%;
+}
+.cyt > h1 {
+    margin-left: 10px;
+    padding: 10px;
+}
+.time-schedulable {
+    user-select: none;
+    visibility: hidden;
+}
+.time-schedulable[data-called = "false"] {
+}
+.time-schedulable[data-called = "true"] > button {
+    visibility: visible;
+}*/
