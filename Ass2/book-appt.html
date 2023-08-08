@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="main-wrapper booking-main">
-        <div class="booking-header-wrapper">
+        <div class="booking-header-wrapper" id="top">
             <div class="header-title">
                 <h1>Book A Walk</h1>
                 <a href="">or try a group walk<sup>new</sup></a>
@@ -112,7 +112,8 @@
                 <button id="cancel">Cancel</button>
             </div>
         </div>
-        <div class="booking-sequence time-step" id="Time">
+        <div class="booking-sequence time-step">
+            <div class="accesibility-tab time" id="Time"><a href="">d</a></div>
             <div class="time-step-header">
                 <h1>Choose your time</h1>
             </div>
@@ -141,7 +142,8 @@
                 <button id="cancel">Cancel</button>
             </div>
         </div>
-        <div class="booking-sequence walker-step" id="Walker">
+        <div class="booking-sequence walker-step">
+            <div class="accesibility-tab walker" id="Walker"><a href="">d</a></div>
             <div class="walker-step-header">
                 <h1>Choose Your Walker</h1>
                 <a href="history.html">view your walker history ></a>
@@ -221,12 +223,17 @@
                 <button id="cancel">Cancel</button>
             </div>
         </div>
-        <div class="booking-sequence payment-step" id="Payment">
+        <div class="booking-sequence payment-step">
+            <div class="accesibility-tab payment" id="Payment"><a href="">d</a></div>
             <div class="payment-header-wrapper">
                 <h1>Add Your Payment Details</h1>
                 <div class="tags alert">
                     <button id="alert-icon">!</button>
                     <button id="alert-text">You won't be charged until after the walk</button>
+                </div>
+                <div class="paywave-alert">
+                    <p>You can skip this step if you're using paywave</p>
+                    <a href="">Learn more ></a>
                 </div>
                 <div class="payment-card-wrapper">
                     <div class="card-individual-wrapper">
@@ -260,13 +267,10 @@
                     <a href="#Checkout">Next Step</a>
                     <button id="cancel">Cancel</button>
                 </div>
-                <div class="paywave-alert">
-                    <p>You can skip this step if you're using paywave</p>
-                    <a href="">Learn more ></a>
-                </div>
             </div>
         </div>
-        <div class="booking-sequence checkout-step" id="Checkout">
+        <div class="booking-sequence checkout-step">
+            <div class="accesibility-tab checkout" id="Checkout"><a href="">d</a></div>
             <div class="review-header-wrapper">
                 <h1>Review And Checkout</h1>
                 <div class="tags alert">

@@ -285,7 +285,7 @@ a {
     margin-right: 120px;
     font-size: calc(var(--header-size)/1.2);
     color: var(--text-medium);
-    font-weight: var(--title-weight);
+    font-weight: calc(var(--title-weight)/1.5);
     padding-left: 5px;
     margin-top: -40px;
 
@@ -306,6 +306,13 @@ a {
 /* Choose Time Step */
 .time-step {
     margin-top: 310px;
+}
+.accesibility-tab {
+    visibility: hidden;
+}
+.time-step-header {
+    margin-top: 100px;
+
 }
 .time-step-header > h1 {
     font-size: var(--header-size);
@@ -359,7 +366,16 @@ a {
 .actions-time > #pin-time {
     margin-left: 10px;
 }
+/* Payment Step*/
+.payment-step {
+    margin-top: 300px;
+}
+
 /* Walker Step */
+.walker-step {
+    margin-top: 460px;
+
+}
 .walker-information {
     display: flex;
     gap: 14rem;
@@ -373,6 +389,10 @@ a {
 
 /* Review and Checkout */
 /* Map */
+.checkout-step {
+    margin-top: 500px;
+
+}
 .isMap {
     padding: 0;
     background-color: var(--map-default-background);
