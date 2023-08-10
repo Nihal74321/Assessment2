@@ -110,7 +110,7 @@ a {
 .function-buttons > a {
     background-color: var(--accent-blue);
 }
-.function-buttons > button {
+.function-buttons > button, .function-buttons > a:nth-child(2) {
     padding-inline: 50px;
     background-color: var(--card-dark);
     cursor: pointer;
@@ -373,7 +373,7 @@ a {
 
 /* Walker Step */
 .walker-step {
-    margin-top: 460px;
+    margin-top: 500px;
 
 }
 .walker-information {
